@@ -1,25 +1,25 @@
 <?php 
 
 $input = floatval($argv[1]);
-define("geld",[
+define("GELD",[
     100,
     50,
     20,
     10,
     5,
     2,
-    1,
-]);
+    1,]
+);
 $input2 = floatval($argv[1]) * 100;
-$input2 = substr($input2, -2,2);
-define("geldt",[
+$input2 = substr($input2, -2, 2);
+define("GELDT",[
     50,
     20,
     10,
     5,
     2,
-    1
-]);
+    1]
+);
 round($input, 5);
 round($input2, 5);
 foreach (geld as $geldvalue ){
@@ -35,6 +35,6 @@ foreach (geldt as $geldvalue){
         $amount2 = floor($input2 / $geldvalue);
         echo $amount2 . " x " . $geldvalue . " cent" . PHP_EOL;
         $input2 = $input2 - ($amount2 * $geldvalue);  
-}
+    }
 }
 ?> 
