@@ -12,7 +12,7 @@ round($input, 5);
 round($input2, 5);
 
 foreach (geld as $geldvalue ) {
-    if (floor ($input / $geldvalue) > 0) {
+    if (floor($input / $geldvalue) > 0) {
         $amount = floor($input / $geldvalue);
         echo $amount . " x " . $geldvalue . " euro" . PHP_EOL;
         $input = $input - ($amount * $geldvalue);  
@@ -20,7 +20,7 @@ foreach (geld as $geldvalue ) {
 }
 
 foreach (geldt as $geldvalue) {
-    if(floor ($input2 / $geldvalue) > 0) {
+    if(floor($input2 / $geldvalue) > 0) {
         $amount2 = floor($input2 / $geldvalue);
         echo $amount2 . " x " . $geldvalue . " cent" . PHP_EOL;
         $input2 = $input2 - ($amount2 * $geldvalue);  
